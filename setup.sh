@@ -415,9 +415,9 @@ isDockerContainer() {
 
 inDocker() {
   if isContainerOrPod || isDockerBuildkit || isDockerContainer; then
-    return 0
-  else
     return 1
+  else
+    return 0
   fi
 }
 
